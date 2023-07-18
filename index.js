@@ -50,7 +50,7 @@ class LFUCache  {
         const node = this.values.get(key);
         this.incrementFreq(node);
         return node.value;
-    };
+    }
 
     incrementFreq (node) {
         const list = this.freqs.get(node.freq);
